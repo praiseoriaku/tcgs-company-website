@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Request received — Tropical Concept Global Services</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --green-900:#0F3620;
+    --green-700:#1C6138;
+    --yellow-500:#F2B705;
+    --yellow-300:#FBDA6B;
+    --paper:#F6F4EC;
+    --steel:#5E6B60;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    min-height:100vh;
+    background:var(--green-900);
+    color:var(--paper);
+    font-family:'IBM Plex Sans', sans-serif;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:28px;
+  }
+  .card{
+    max-width:460px;
+    width:100%;
+    text-align:left;
+  }
+  .brand-mark{
+    width:46px; height:46px;
+    background:var(--yellow-500);
+    border-radius:2px;
+    display:flex; align-items:center; justify-content:center;
+    font-family:'Archivo', sans-serif;
+    font-weight:900;
+    font-size:16px;
+    color:var(--green-900);
+    margin-bottom:32px;
+  }
+  .grid-mark{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:2px;
+    width:64px;
+    aspect-ratio:1;
+    margin-bottom:28px;
+  }
+  .grid-mark div{background:var(--green-700);}
+  .grid-mark div:nth-child(3){background:var(--yellow-500);}
+  .grid-mark div:nth-child(9){background:var(--yellow-300);}
+  h1{
+    font-family:'Archivo', sans-serif;
+    font-weight:800;
+    font-size:clamp(26px, 4vw, 34px);
+    line-height:1.15;
+    margin:0 0 16px;
+  }
+  p{
+    color:#D9E2DA;
+    font-size:16px;
+    line-height:1.6;
+    margin:0 0 28px;
+    max-width:42ch;
+  }
+  .details{
+    border-top:1px solid rgba(246,244,236,0.16);
+    padding-top:20px;
+    margin-bottom:32px;
+  }
+  .details div{margin-bottom:10px; font-size:14.5px; color:#B8C2BA;}
+  .details strong{color:var(--paper); font-weight:600;}
+  a.btn{
+    display:inline-block;
+    background:var(--yellow-500);
+    color:var(--green-900);
+    text-decoration:none;
+    font-weight:600;
+    font-size:15px;
+    padding:13px 26px;
+    border-radius:2px;
+    transition:background 0.15s ease;
+  }
+  a.btn:hover{background:var(--yellow-300);}
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="grid-mark" aria-hidden="true">
+      <div></div><div></div><div></div><div></div>
+      <div></div><div></div><div></div><div></div>
+      <div></div><div></div><div></div><div></div>
+    </div>
+    <h1>Request received.</h1>
+    <p>Thanks for reaching out to Tropical Concept Global Services. A member of our team will review your project details and get back to you shortly.</p>
+    <div class="details">
+      <div><strong>Prefer to call?</strong> +234 806 639 1730 · 0802 365 2834</div>
+      <div><strong>Email:</strong> tropicalconceptglobalservice@gmail.com</div>
+    </div>
+    <a href="index.html" class="btn">Back to homepage</a>
+  </div>
+</body>
+</html>
