@@ -1,44 +1,271 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tropical Concept Global Services — Aluminium, Glass &amp; Metal Works</title>
-<meta name="description" content="TCGS fabricates and installs structural aluminium, glass and metal systems across Lagos — windows, doors, curtain walls, cladding and more, since 2000.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-:root{--green-900:#0F3620;--green-800:#14472B;--green-700:#1C6138;--yellow-500:#F2B705;--yellow-300:#FBDA6B;--ink:#131A14;--paper:#F6F4EC;--paper-dim:#EBE8DC;--steel:#5E6B60;--steel-line:#D8D4C4;--max:1180px}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 'IBM Plex Sans',sans-serif;-webkit-font-smoothing:antialiased}h1,h2,h3,h4{font-family:Archivo,sans-serif;font-weight:800;line-height:1.05;letter-spacing:-.01em;margin:0;color:var(--green-900)}p{margin:0}a{color:inherit}img{max-width:100%;display:block}ul{margin:0;padding:0;list-style:none}button{font:inherit}:focus-visible{outline:2.5px solid var(--yellow-500);outline-offset:3px}.wrap{max-width:var(--max);margin:auto;padding:0 28px}
-header{position:sticky;top:0;z-index:50;background:rgba(250,250,252,.94);border-bottom:1px solid rgba(0,0,0,.08)}.nav-row{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;transition:transform .2s ease}.brand:hover{transform:translateY(-2px)}.brand-mark{width:44px}.brand-name{font:700 16.5px/1.2 Archivo,sans-serif;color:var(--green-900)}.brand-name span{display:block;font:600 11.5px 'IBM Plex Sans',sans-serif;color:var(--green-700);margin-top:2px}nav.main-links{display:flex;gap:34px}nav.main-links a{color:var(--green-900);text-decoration:none;font-size:15px;font-weight:500;padding:6px 0;border-bottom:2px solid transparent;transition:color .2s,border-color .2s,transform .2s}nav.main-links a:hover{color:var(--green-700);border-color:var(--yellow-500);transform:translateY(-2px)}.menu-btn{display:none;background:none;border:1px solid rgba(15,15,15,.35);border-radius:2px;width:40px;height:40px;cursor:pointer}
-.hero{position:relative;overflow:hidden;min-height:640px;display:flex;align-items:center;color:var(--paper);background:linear-gradient(100deg,#081c0f 0%,#0c2c17 32%,rgba(9,32,18,.55) 60%,rgba(9,32,18,.15) 85%),url('assets/heropic.JPG') center/cover}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,rgba(255,255,255,.06),transparent 45%);animation:heroSheen 8s ease-in-out infinite alternate;pointer-events:none}.hero .wrap{position:relative;z-index:1;width:100%;padding-top:72px;padding-bottom:80px}.hero-content{max-width:560px;animation:heroTextIn .8s cubic-bezier(.2,.8,.2,1) both .15s}.hero-eyebrow{color:var(--yellow-300);font-size:14px;margin-bottom:18px;animation:fadeUp .7s ease both .25s}.hero h1{font-size:clamp(34px,4.6vw,54px);color:var(--paper)}.hero h1 em{font-style:normal;color:var(--yellow-500)}.hero-sub{margin-top:22px;max-width:46ch;font-size:17px;color:#E4EAE2;animation:fadeUp .7s ease both .45s}.hero-actions{display:flex;gap:16px;margin-top:34px;flex-wrap:wrap;animation:fadeUp .7s ease both .6s}.btn-primary,.btn-ghost{display:inline-block;text-decoration:none;font-size:15px;font-weight:600;padding:14px 26px;border-radius:2px;transition:background .2s,transform .2s,box-shadow .2s}.btn-primary{background:var(--yellow-500);color:var(--green-900)}.btn-primary:hover{background:var(--yellow-300);transform:translateY(-3px);box-shadow:0 8px 20px rgba(0,0,0,.2)}.btn-ghost{border:1.5px solid rgba(246,244,236,.55);color:var(--paper);padding:13px 24px}.btn-ghost:hover{border-color:var(--yellow-500);background:rgba(242,183,5,.12);transform:translateY(-3px)}@keyframes heroTextIn{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}@keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}@keyframes heroSheen{from{transform:translateX(-8%);opacity:.25}to{transform:translateX(8%);opacity:.65}}
-.trust{background:var(--paper-dim);border-bottom:1px solid var(--steel-line)}.trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);padding:26px 28px;gap:20px}.trust-item{border-left:2px solid var(--yellow-500);padding-left:14px;transition:transform .2s}.trust-item:hover{transform:translateX(4px)}.trust-item strong{display:block;font:800 26px Archivo;color:var(--green-900)}.trust-item span{font-size:13.5px;color:var(--steel)}section{padding:88px 0}.section-head{max-width:640px;margin-bottom:46px}.section-tag{color:var(--green-700);font-weight:600;font-size:14px;margin-bottom:10px}.section-head h2{font-size:clamp(26px,3.2vw,36px)}.section-head p{margin-top:14px;color:var(--steel);max-width:56ch}
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}.about-copy p{font-size:15.5px;margin-bottom:16px}.goals{margin-top:24px;border-top:1px solid var(--steel-line);padding-top:20px}.goals li{display:flex;gap:12px;padding:10px 0;font-size:15px;border-bottom:1px solid var(--steel-line);transition:padding-left .2s}.goals li:hover{padding-left:6px}.goals li:before{content:"";width:8px;height:8px;margin-top:6px;background:var(--yellow-500);flex:none}.about-panel{background:var(--green-900);padding:34px;color:var(--paper)}.about-panel h3{color:var(--yellow-300);font:600 15px 'IBM Plex Sans';margin-bottom:18px}.process-step{display:grid;grid-template-columns:32px 1fr;gap:14px;padding:16px 0;border-bottom:1px solid rgba(246,244,236,.14);transition:transform .2s}.process-step:hover{transform:translateX(5px)}.process-step .num{font:800 16px Archivo;color:var(--yellow-500)}.process-step h4{font-size:15.5px;color:var(--paper);margin-bottom:4px}.process-step p{font-size:13.8px;color:#CBD6CD}
-.services-list{border-top:1px solid var(--steel-line)}.spec-row{display:grid;grid-template-columns:26px 1fr 1.4fr;gap:28px;padding:20px 0;border-bottom:1px solid var(--steel-line);align-items:baseline;transition:background .2s,padding-left .2s}.spec-row:hover{background:rgba(28,97,56,.06);padding-left:8px}.spec-row .swatch{width:14px;height:14px;background:var(--green-700)}.spec-row:nth-child(3n+1) .swatch{background:var(--yellow-500)}.spec-row:nth-child(3n) .swatch{background:var(--green-900)}.spec-row h3{font-size:18px}.spec-row p{color:var(--steel);font-size:14.5px}.sectors{margin-top:52px;padding-top:32px;border-top:1px solid var(--steel-line)}.sectors h3{font-size:14px;color:var(--green-700);margin-bottom:16px}.sectors-line{display:flex;flex-wrap:wrap;font-size:15.5px}.sectors-line span{padding:4px 16px 4px 0;margin-right:16px;border-right:1px solid var(--steel-line)}
-.project-grid{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:180px;gap:4px}.project-tile{position:relative;grid-column:span 2;min-height:180px;background-color:var(--green-800);background-size:cover;background-position:center;display:flex;align-items:flex-end;padding:16px;overflow:hidden;cursor:pointer;transition:transform .3s ease,box-shadow .3s ease,filter .3s ease}.project-tile:hover{transform:translateY(-7px) scale(1.02);z-index:2;filter:saturate(1.15);box-shadow:0 14px 28px rgba(15,54,32,.28)}.project-tile:before{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(15,54,32,.92),rgba(15,54,32,.08));transition:background .3s}.project-tile:hover:before{background:linear-gradient(to top,rgba(15,54,32,.72),rgba(15,54,32,.02))}.project-tile span{position:relative;z-index:1;color:var(--paper);font-size:13px;line-height:1.35;font-weight:600;background:rgba(15,54,32,.78);padding:7px 10px;transition:transform .3s,background .3s}.project-tile:hover span{transform:translateY(-4px);background:rgba(15,54,32,.92)}.tile-1{background-image:url('Project-tiles/Tile-01.jpeg')}.tile-2{background-image:url('Project-tiles/Tile-02.jpeg')}.tile-3{background-image:url('Project-tiles/Tile-03.jpeg')}.tile-4{background-image:url('Project-tiles/Tile-04.jpeg')}.tile-5{background-image:url('Project-tiles/Tile-05.jpeg')}.tile-6{background-image:url('Project-tiles/Tile-06.jpeg')}.tile-7{background-image:url('Project-tiles/Tile-07.jpeg')}.tile-8{background-image:url('Project-tiles/Tile-08.jpeg')}.tile-9{background-image:url('Project-tiles/Tile-09.jpeg')}.tile-10{background-image:url('Project-tiles/Tile-10.jpeg')}.tile-11{background-image:url('Project-tiles/Tile-11.jpeg')}.tile-12{background-image:url('Project-tiles/Tile-12.jpeg')}.tile-13{background-image:url('Project-tiles/Tile-13.jpeg')}.tile-14{background-image:url('Project-tiles/Tile-14.jpeg')}.tile-15{background-image:url('Project-tiles/Tile-15.jpeg')}.tile-16{background-image:url('Project-tiles/Tile-16.jpeg')}.tile-17{background-image:url('Project-tiles/Tile-17.jpeg')}.tile-18{background-image:url('Project-tiles/Tile-18.jpeg')}.project-note{margin-top:18px;font-size:13.5px;color:var(--steel)}
-.lightbox{position:fixed;inset:0;z-index:100;display:flex;align-items:center;justify-content:center;padding:28px;background:rgba(5,18,10,.92);opacity:0;visibility:hidden;transition:opacity .25s,visibility .25s}.lightbox.is-open{opacity:1;visibility:visible}.lightbox-content{display:flex;flex-direction:column;align-items:center;max-width:min(92vw,1100px);max-height:92vh;animation:lightboxIn .25s ease both}.lightbox-image{max-width:100%;max-height:78vh;object-fit:contain;border:3px solid var(--paper);box-shadow:0 14px 50px rgba(0,0,0,.45)}.lightbox-caption{margin-top:14px;color:var(--paper);text-align:center;font-weight:600}.lightbox-close,.lightbox-arrow{position:fixed;border:1px solid rgba(246,244,236,.55);background:rgba(15,54,32,.9);color:var(--paper);cursor:pointer;display:grid;place-items:center;transition:background .2s,transform .2s}.lightbox-close:hover,.lightbox-arrow:hover{background:var(--yellow-500);color:var(--green-900)}.lightbox-close{top:22px;right:24px;width:44px;height:44px;border-radius:50%;font-size:28px}.lightbox-arrow{top:50%;width:50px;height:64px;font-size:34px}.lightbox-prev{left:24px}.lightbox-next{right:24px}.lightbox-prev:hover{transform:translate(-3px,-50%)}.lightbox-next:hover{transform:translate(3px,-50%)}@keyframes lightboxIn{from{opacity:0;transform:scale(.96)}to{opacity:1;transform:scale(1)}}body.lightbox-open{overflow:hidden}
-.contact-section{background:var(--green-900);color:var(--paper)}.contact-section .section-tag{color:var(--yellow-300)}.contact-section .section-head h2{color:var(--paper)}.contact-section .section-head p{color:#CBD6CD}.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:60px}.contact-info .item{padding:18px 0;border-bottom:1px solid rgba(246,244,236,.14)}.contact-info dt{font-size:12.5px;color:var(--yellow-300);font-weight:600;margin-bottom:6px}.contact-info dd{margin:0}form{display:grid;gap:16px}.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}label{display:block;font-size:12.5px;color:var(--yellow-300);font-weight:600;margin-bottom:7px}input,textarea{width:100%;background:rgba(246,244,236,.06);border:1px solid rgba(246,244,236,.3);color:var(--paper);padding:12px 14px;font:15px 'IBM Plex Sans';border-radius:2px}textarea{resize:vertical;min-height:110px}.submit-btn{justify-self:start;background:var(--yellow-500);color:var(--green-900);border:0;font-weight:600;padding:14px 28px;border-radius:2px;cursor:pointer;transition:background .2s,transform .2s}.submit-btn:hover{background:var(--yellow-300);transform:translateY(-3px)}footer{background:var(--ink);color:#B8C2BA;padding:44px 0 28px}.footer-row{display:flex;justify-content:space-between;flex-wrap:wrap;gap:24px;padding-bottom:24px;border-bottom:1px solid rgba(246,244,236,.1)}.footer-links{display:flex;gap:26px}.footer-links a{text-decoration:none;font-size:14px;transition:color .2s,transform .2s}.footer-links a:hover{color:var(--yellow-500)}.footer-bottom{padding-top:20px;display:flex;justify-content:space-between;font-size:13px;color:#7C8A7F;flex-wrap:wrap;gap:10px}
-@media(max-width:900px){nav.main-links{display:none}.menu-btn{display:block}.hero{min-height:560px}.hero .wrap{padding-top:44px}.trust .wrap{grid-template-columns:repeat(2,1fr)}.about-grid,.contact-grid{grid-template-columns:1fr;gap:36px}.spec-row{grid-template-columns:20px 1fr;grid-template-areas:'a b' 'c c'}.spec-row .swatch{grid-area:a}.spec-row h3{grid-area:b}.spec-row p{grid-area:c}.project-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:170px}.project-tile{grid-column:span 1;min-height:170px}.form-row{grid-template-columns:1fr}.footer-row{flex-direction:column}.lightbox{padding:18px}.lightbox-image{max-width:calc(100vw - 36px);max-height:72vh}.lightbox-arrow{width:42px;height:52px;font-size:28px}.lightbox-prev{left:8px}.lightbox-next{right:8px}.lightbox-close{top:10px;right:10px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
-.nav-open nav.main-links{display:flex;flex-direction:column;position:absolute;top:76px;left:0;right:0;background:var(--green-900);padding:20px 28px 26px;gap:6px}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tropical Concept Global Services — Aluminium, Glass &amp; Metal Works</title>
+  <meta name="description" content="TCGS fabricates and installs structural aluminium, glass and metal systems across Lagos.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <style>
+    /* ================================================================
+       TCGS WEBSITE STYLES
+       Sections: base | header | hero | content | projects | lightbox |
+                 contact | footer | responsive
+       ================================================================ */
+    :root {
+      --green-900: #0f3620;
+      --green-800: #14472b;
+      --green-700: #1c6138;
+      --yellow-500: #f2b705;
+      --yellow-300: #fbda6b;
+      --ink: #131a14;
+      --paper: #f6f4ec;
+      --paper-dim: #ebe8dc;
+      --steel: #5e6b60;
+      --steel-line: #d8d4c4;
+      --max-width: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font: 16px/1.6 'IBM Plex Sans', sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    body.lightbox-open { overflow: hidden; }
+    h1, h2, h3, h4 {
+      margin: 0;
+      color: var(--green-900);
+      font-family: Archivo, sans-serif;
+      font-weight: 800;
+      line-height: 1.05;
+      letter-spacing: -.01em;
+    }
+    p { margin: 0; }
+    a { color: inherit; }
+    img { display: block; max-width: 100%; }
+    button, input, textarea { font: inherit; }
+    :focus-visible { outline: 2.5px solid var(--yellow-500); outline-offset: 3px; }
+    .wrap { width: min(100% - 56px, var(--max-width)); margin-inline: auto; }
+
+    /* Header */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(250, 250, 252, .94);
+      border-bottom: 1px solid rgba(0, 0, 0, .08);
+    }
+    .nav-row { min-height: 76px; display: flex; align-items: center; justify-content: space-between; }
+    .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+    .brand-mark { width: 44px; flex: none; }
+    .brand-name { color: var(--green-900); font: 700 16.5px/1.2 Archivo, sans-serif; }
+    .brand-name span { display: block; margin-top: 2px; color: var(--green-700); font: 600 11.5px 'IBM Plex Sans', sans-serif; }
+    .main-links { display: flex; gap: 34px; }
+    .main-links a { color: var(--green-900); text-decoration: none; font-size: 15px; padding: 6px 0; border-bottom: 2px solid transparent; transition: color .2s, border-color .2s; }
+    .main-links a:hover { color: var(--green-700); border-color: var(--yellow-500); }
+    .menu-btn { display: none; width: 40px; height: 40px; border: 1px solid rgba(15,15,15,.35); background: none; cursor: pointer; }
+
+    /* Hero */
+    .hero {
+      position: relative;
+      min-height: 640px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      color: var(--paper);
+      background: linear-gradient(100deg, #081c0f 0%, #0c2c17 32%, rgba(9,32,18,.55) 60%, rgba(9,32,18,.15) 85%), url('assets/heropic.JPG') center/cover;
+    }
+    .hero::after { content: ''; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(110deg, rgba(255,255,255,.05), transparent 45%); animation: heroSheen 10s ease-in-out infinite alternate; }
+    .hero .wrap { position: relative; z-index: 1; padding-block: 72px 80px; }
+    .hero-content { max-width: 560px; animation: heroTextIn .9s cubic-bezier(.2,.8,.2,1) both .15s; }
+    .hero-eyebrow { margin-bottom: 18px; color: var(--yellow-300); font-size: 14px; animation: fadeUp .7s ease both .25s; }
+    .hero h1 { color: var(--paper); font-size: clamp(34px, 4.6vw, 54px); }
+    .hero h1 em { color: var(--yellow-500); font-style: normal; }
+    .hero-sub { max-width: 46ch; margin-top: 22px; color: #e4eae2; font-size: 17px; animation: fadeUp .7s ease both .45s; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 34px; animation: fadeUp .7s ease both .6s; }
+    .btn-primary, .btn-ghost { display: inline-block; padding: 13px 24px; border-radius: 2px; text-decoration: none; font-weight: 600; transition: background .2s, transform .2s, box-shadow .2s; }
+    .btn-primary { padding: 14px 26px; background: var(--yellow-500); color: var(--green-900); }
+    .btn-primary:hover { background: var(--yellow-300); transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,0,0,.2); }
+    .btn-ghost { border: 1.5px solid rgba(246,244,236,.55); color: var(--paper); }
+    .btn-ghost:hover { border-color: var(--yellow-500); background: rgba(242,183,5,.1); transform: translateY(-2px); }
+    @keyframes heroTextIn { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+    @keyframes heroSheen { from { transform: translateX(-6%); opacity: .25; } to { transform: translateX(6%); opacity: .6; } }
+
+    /* Shared content */
+    section { padding: 88px 0; }
+    .section-head { max-width: 640px; margin-bottom: 46px; }
+    .section-tag { margin-bottom: 10px; color: var(--green-700); font-size: 14px; font-weight: 600; }
+    .section-head h2 { font-size: clamp(26px, 3.2vw, 36px); }
+    .section-head p { max-width: 56ch; margin-top: 14px; color: var(--steel); }
+    .trust { background: var(--paper-dim); border-bottom: 1px solid var(--steel-line); }
+    .trust .wrap { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; padding-block: 26px; }
+    .trust-item { padding-left: 14px; border-left: 2px solid var(--yellow-500); transition: transform .2s; }
+    .trust-item:hover { transform: translateX(4px); }
+    .trust-item strong { display: block; color: var(--green-900); font: 800 26px Archivo, sans-serif; }
+    .trust-item span { color: var(--steel); font-size: 13.5px; }
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
+    .about-copy { margin-top: 24px; }
+    .about-copy p { margin-bottom: 16px; font-size: 15.5px; }
+    .goals { margin: 24px 0 0; padding-top: 20px; border-top: 1px solid var(--steel-line); list-style: none; }
+    .goals li { display: flex; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--steel-line); }
+    .goals li::before { content: ''; width: 8px; height: 8px; margin-top: 6px; flex: none; background: var(--yellow-500); }
+    .about-panel { padding: 34px; background: var(--green-900); color: var(--paper); }
+    .about-panel h3 { margin-bottom: 18px; color: var(--yellow-300); font: 600 15px 'IBM Plex Sans', sans-serif; }
+    .process-step { display: grid; grid-template-columns: 32px 1fr; gap: 14px; padding: 16px 0; border-bottom: 1px solid rgba(246,244,236,.14); }
+    .process-step:last-child { border-bottom: 0; }
+    .process-step .num { color: var(--yellow-500); font: 800 16px Archivo, sans-serif; }
+    .process-step h4 { margin-bottom: 4px; color: var(--paper); font-size: 15.5px; }
+    .process-step p { color: #cbd6cd; font-size: 13.8px; }
+    .services-list { border-top: 1px solid var(--steel-line); }
+    .spec-row { display: grid; grid-template-columns: 26px 1fr 1.4fr; gap: 28px; align-items: baseline; padding: 20px 0; border-bottom: 1px solid var(--steel-line); }
+    .spec-row .swatch { width: 14px; height: 14px; background: var(--green-700); }
+    .spec-row:nth-child(3n+1) .swatch { background: var(--yellow-500); }
+    .spec-row:nth-child(3n) .swatch { background: var(--green-900); }
+    .spec-row h3 { font-size: 18px; }
+    .spec-row p { color: var(--steel); font-size: 14.5px; }
+    .sectors { margin-top: 52px; padding-top: 32px; border-top: 1px solid var(--steel-line); }
+    .sectors h3 { margin-bottom: 16px; color: var(--green-700); font-size: 14px; }
+    .sectors-line { display: flex; flex-wrap: wrap; font-size: 15.5px; }
+    .sectors-line span { margin-right: 16px; padding-right: 16px; border-right: 1px solid var(--steel-line); }
+
+    /* Projects: tile hover intentionally removed; clicking still opens the viewer. */
+    .project-grid { display: grid; grid-template-columns: repeat(6, 1fr); grid-auto-rows: 180px; gap: 4px; }
+    .project-tile { position: relative; grid-column: span 2; min-height: 180px; display: flex; align-items: flex-end; padding: 16px; overflow: hidden; cursor: pointer; background: var(--green-800) center/cover; }
+    .project-tile::before { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(15,54,32,.9), rgba(15,54,32,.08)); }
+    .project-tile span { position: relative; z-index: 1; padding: 7px 10px; color: var(--paper); background: rgba(15,54,32,.78); font-size: 13px; line-height: 1.35; font-weight: 600; }
+    .tile-1{background-image:url('Project-tiles/Tile-01.jpeg')}.tile-2{background-image:url('Project-tiles/Tile-02.jpeg')}.tile-3{background-image:url('Project-tiles/Tile-03.jpeg')}.tile-4{background-image:url('Project-tiles/Tile-04.jpeg')}.tile-5{background-image:url('Project-tiles/Tile-05.jpeg')}.tile-6{background-image:url('Project-tiles/Tile-06.jpeg')}.tile-7{background-image:url('Project-tiles/Tile-07.jpeg')}.tile-8{background-image:url('Project-tiles/Tile-08.jpeg')}.tile-9{background-image:url('Project-tiles/Tile-09.jpeg')}.tile-10{background-image:url('Project-tiles/Tile-10.jpeg')}.tile-11{background-image:url('Project-tiles/Tile-11.jpeg')}.tile-12{background-image:url('Project-tiles/Tile-12.jpeg')}.tile-13{background-image:url('Project-tiles/Tile-13.jpeg')}.tile-14{background-image:url('Project-tiles/Tile-14.jpeg')}.tile-15{background-image:url('Project-tiles/Tile-15.jpeg')}.tile-16{background-image:url('Project-tiles/Tile-16.jpeg')}.tile-17{background-image:url('Project-tiles/Tile-17.jpeg')}.tile-18{background-image:url('Project-tiles/Tile-18.jpeg')}
+    .project-note { margin-top: 18px; color: var(--steel); font-size: 13.5px; }
+
+    /* Lightbox */
+    .lightbox { position: fixed; inset: 0; z-index: 100; display: flex; align-items: center; justify-content: center; padding: 28px; background: rgba(5,18,10,.92); opacity: 0; visibility: hidden; transition: opacity .25s, visibility .25s; }
+    .lightbox.is-open { opacity: 1; visibility: visible; }
+    .lightbox-content { display: flex; flex-direction: column; align-items: center; max-width: min(92vw,1100px); max-height: 92vh; animation: lightboxIn .25s ease both; }
+    .lightbox-image { max-width: 100%; max-height: 78vh; object-fit: contain; border: 3px solid var(--paper); }
+    .lightbox-caption { max-width: 780px; margin-top: 14px; color: var(--paper); text-align: center; font-weight: 600; }
+    .lightbox-close, .lightbox-arrow { position: fixed; display: grid; place-items: center; border: 1px solid rgba(246,244,236,.55); background: rgba(15,54,32,.9); color: var(--paper); cursor: pointer; }
+    .lightbox-close { top: 22px; right: 24px; width: 44px; height: 44px; border-radius: 50%; font-size: 28px; }
+    .lightbox-arrow { top: 50%; width: 50px; height: 64px; transform: translateY(-50%); font-size: 34px; }
+    .lightbox-prev { left: 24px; }.lightbox-next { right: 24px; }
+    @keyframes lightboxIn { from { opacity: 0; transform: scale(.96); } to { opacity: 1; transform: scale(1); } }
+
+    /* Contact and footer */
+    .contact-section { background: var(--green-900); color: var(--paper); }
+    .contact-section .section-tag { color: var(--yellow-300); }.contact-section h2 { color: var(--paper); }.contact-section .section-head p { color: #cbd6cd; }
+    .contact-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: 60px; }.contact-info .item { padding: 18px 0; border-bottom: 1px solid rgba(246,244,236,.14); }.contact-info dt { color: var(--yellow-300); font-size: 12.5px; font-weight: 600; }.contact-info dd { margin: 0; }
+    form { display: grid; gap: 16px; }.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }label { display: block; margin-bottom: 7px; color: var(--yellow-300); font-size: 12.5px; font-weight: 600; }input, textarea { width: 100%; padding: 12px 14px; border: 1px solid rgba(246,244,236,.3); border-radius: 2px; background: rgba(246,244,236,.06); color: var(--paper); }textarea { min-height: 110px; resize: vertical; }.submit-btn { justify-self: start; padding: 14px 28px; border: 0; border-radius: 2px; background: var(--yellow-500); color: var(--green-900); cursor: pointer; font-weight: 600; }
+    footer { padding: 44px 0 28px; background: var(--ink); color: #b8c2ba; }.footer-row { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 24px; padding-bottom: 24px; border-bottom: 1px solid rgba(246,244,236,.1); }.footer-links { display: flex; gap: 26px; }.footer-links a { text-decoration: none; font-size: 14px; }.footer-bottom { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; padding-top: 20px; color: #7c8a7f; font-size: 13px; }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .wrap { width: min(100% - 36px, var(--max-width)); }
+      .menu-btn { display: block; }
+      .main-links { display: none; }
+      .hero { min-height: 560px; }.hero .wrap { padding-block: 44px; }
+      .trust .wrap { grid-template-columns: repeat(2, 1fr); }
+      .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 36px; }
+      .spec-row { grid-template-columns: 20px 1fr; grid-template-areas: 'swatch title' 'copy copy'; }
+      .spec-row .swatch { grid-area: swatch; }.spec-row h3 { grid-area: title; }.spec-row p { grid-area: copy; }
+      .project-grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 170px; }.project-tile { grid-column: span 1; min-height: 170px; }
+      .form-row { grid-template-columns: 1fr; }.footer-row { flex-direction: column; }
+      .lightbox { padding: 18px; }.lightbox-image { max-width: calc(100vw - 36px); max-height: 72vh; }.lightbox-arrow { width: 42px; height: 52px; font-size: 28px; }.lightbox-prev { left: 8px; }.lightbox-next { right: 8px; }.lightbox-close { top: 10px; right: 10px; }
+      .nav-open .main-links { position: absolute; top: 76px; left: 0; right: 0; display: flex; flex-direction: column; gap: 6px; padding: 20px 28px 26px; background: var(--green-900); }.nav-open .main-links a { color: var(--paper); }
+    }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; } }
+  </style>
 </head>
 <body>
-<header><div class="wrap nav-row" id="navRow"><a href="#top" class="brand"><img src="tcgs%20assests/tcgs-logo.webp" alt="TCGS logo" class="brand-mark"><span class="brand-name">Tropical Concept<span>Global Services</span></span></a><nav class="main-links" aria-label="Primary"><a href="#about">About</a><a href="#services">Services</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav><button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">☰</button></div></header>
-<main id="top">
-<section class="hero"><div class="wrap"><div class="hero-content"><p class="hero-eyebrow">Lagos, Nigeria — fabricating since 2000</p><h1>Aluminium, glass and metal, built to <em>hold</em>.</h1><p class="hero-sub">TCGS manufactures, fabricates and installs structural aluminium, glass and metal systems — from a single window to a full curtain wall — for architects, developers and building owners.</p><div class="hero-actions"><a href="#contact" class="btn-primary">Request a quote</a><a href="#projects" class="btn-ghost">See our work</a></div></div></div></section>
-<div class="trust"><div class="wrap"><div class="trust-item"><strong>2000</strong><span>In business since</span></div><div class="trust-item"><strong>15+</strong><span>Specialist staff</span></div><div class="trust-item"><strong>7</strong><span>Building sectors served</span></div><div class="trust-item"><strong>Lagos</strong><span>Based &amp; operating</span></div></div></div>
-<section id="about"><div class="wrap about-grid"><div><div class="section-head"><p class="section-tag">About TCGS</p><h2>Structural work, built by people who supervise it end to end.</h2></div><div class="about-copy"><p>Tropical Concept Global Services has been in existence since 2000 and was formally incorporated in Nigeria on 15th May 2015. We manufacture, fabricate and install aluminium, glass and metal systems for residential, commercial and industrial projects.</p><p>With engineers, technicians and computer analysts on staff, we combine practical site experience with quality materials and careful project supervision.</p></div><ul class="goals"><li>Provide adequate and excellent service to every customer</li><li>Meet client needs at affordable prices</li><li>Meet the needs of architects and developers directly</li></ul></div><div class="about-panel"><h3>How a project moves through TCGS</h3><div class="process-step"><span class="num">01</span><div><h4>Evaluate &amp; quote</h4><p>Tender documents, site visits and cost evaluation before production begins.</p></div></div><div class="process-step"><span class="num">02</span><div><h4>Fabricate in-house</h4><p>Components are cut, grooved and finished in our workshop.</p></div></div><div class="process-step"><span class="num">03</span><div><h4>Install &amp; supervise</h4><p>Site supervisors run installation and safety on-site through to sign-off.</p></div></div></div></div></section>
-<section id="services"><div class="wrap"><div class="section-head"><p class="section-tag">What we build</p><h2>Every system, fabricated and installed in-house.</h2><p>A full specification range — from a single casement window to structural glazed curtain walling.</p></div><div class="services-list"><div class="spec-row"><span class="swatch"></span><h3>Aluminium doors &amp; windows</h3><p>Casement, sliding, fixed light and combination units.</p></div><div class="spec-row"><span class="swatch"></span><h3>Frameless glass</h3><p>Shower enclosures, partitions and doors.</p></div><div class="spec-row"><span class="swatch"></span><h3>Dry wall &amp; partitioning</h3><p>Aluminium partitioning systems for offices and interiors.</p></div><div class="spec-row"><span class="swatch"></span><h3>Curtain walling</h3><p>Conventional and structural glazed curtain wall systems.</p></div><div class="spec-row"><span class="swatch"></span><h3>Spider glass walls</h3><p>Point-fixed structural glazing for façades and feature walls.</p></div><div class="spec-row"><span class="swatch"></span><h3>Suspended ceilings</h3><p>Ceiling systems fabricated and fitted to specification.</p></div><div class="spec-row"><span class="swatch"></span><h3>Shopfronts &amp; rooflights</h3><p>Retail-facing glazing and overhead light systems.</p></div><div class="spec-row"><span class="swatch"></span><h3>Aluminium composite panel cladding</h3><p>ACP cladding for façades, column covers, fascia and canopies.</p></div><div class="spec-row"><span class="swatch"></span><h3>Balustrades &amp; handrailing</h3><p>Glass balustrades and stainless steel handrailing.</p></div><div class="spec-row"><span class="swatch"></span><h3>Project supervision</h3><p>Full site supervision through installation sign-off.</p></div></div></div></section>
-<section id="projects"><div class="wrap"><div class="section-head"><p class="section-tag">Recent work</p><h2>A sample of completed and ongoing installations.</h2></div><div class="project-grid">
-<div class="project-tile tile-1"><span>ALUMINUM COMPOSITE PANEL CLADDING WORK</span></div><div class="project-tile tile-2"><span>ALUMINUM COMPOSITE PANEL (ACP) CLADDING WORKS</span></div><div class="project-tile tile-3"><span>ALUMINUM COMPOSITE PANEL CLADDING WORKS</span></div><div class="project-tile tile-4"><span>FRAMELESS TOUGHENED SHOWER BATH GLASS</span></div><div class="project-tile tile-5"><span>BALUSTRADES STAINLESS STEEL RAILINGS</span></div><div class="project-tile tile-6"><span>FRAMELESS TOUGHENED RAILINGS GLASS</span></div><div class="project-tile tile-7"><span>BALUSTRADES STAINLESS STEEL BURGLARY</span></div><div class="project-tile tile-8"><span>AUTOMATIC DOOR INSTALLATION WORK</span></div><div class="project-tile tile-9"><span>FRAMELESS TOUGHENED OFFICE PARTITION GLASS WORK</span></div><div class="project-tile tile-10"><span>ALUMINUM CASEMENT AND FRAMELESS WINDOWS</span></div><div class="project-tile tile-11"><span>STRUCTURAL FRAMELESS ALUMINUM CURTAIN WALL WORKS</span></div><div class="project-tile tile-12"><span>ALUMINUM TOILET DUCT WORK</span></div><div class="project-tile tile-13"><span>FRAMELESS CASEMENT WINDOW, ADD WITH OTHER WINDOW</span></div><div class="project-tile tile-14"><span>INSTALLATION OF CLICK CLADDING WORKS</span></div><div class="project-tile tile-15"><span>ALUMINUM DOORS</span></div><div class="project-tile tile-16"><span>ALUMINUM FIXED GLASS WORK</span></div><div class="project-tile tile-17"><span>CLICK CLADDING WORKS</span></div><div class="project-tile tile-18"><span>FINISH ALUMINUM AND GLASS WORK</span></div></div><p class="project-note">Click any project to view it clearly. Use the arrows to move through all 18 project samples.</p></div></section>
-<div class="lightbox" id="projectLightbox" role="dialog" aria-modal="true" aria-label="Project image viewer" aria-hidden="true"><button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close project viewer">&times;</button><button class="lightbox-arrow lightbox-prev" id="lightboxPrev" type="button" aria-label="Previous project">&#10094;</button><div class="lightbox-content"><img class="lightbox-image" id="lightboxImage" alt=""><p class="lightbox-caption" id="lightboxCaption"></p></div><button class="lightbox-arrow lightbox-next" id="lightboxNext" type="button" aria-label="Next project">&#10095;</button></div>
-<section id="contact" class="contact-section"><div class="wrap"><div class="section-head"><p class="section-tag">Get in touch</p><h2>Tell us about your project.</h2><p>Send a few details and we'll come back with a quote and timeline.</p></div><div class="contact-grid"><div class="contact-info"><div class="item"><dt>Address</dt><dd>5, Ifelodun Street, off Lagos Abeokuta Exp. Way, Dopemu Bus Stop, Agege, Lagos State.</dd></div><div class="item"><dt>Phone</dt><dd>+234 806 639 1730 · 0802 365 2834</dd></div><div class="item"><dt>Email</dt><dd>tropicalconceptglobalservice@gmail.com</dd></div></div><form id="quoteForm" action="https://api.web3forms.com/submit" method="POST"><input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY"><input type="hidden" name="subject" value="New quote request — TCGS website"><input type="hidden" name="redirect" value="thank-you.html"><div class="form-row"><div><label for="name">Name</label><input id="name" name="Name" placeholder="Your name" required></div><div><label for="phone">Phone</label><input id="phone" name="Phone" placeholder="Your phone number"></div></div><div><label for="email">Email</label><input type="email" id="email" name="Email" placeholder="you@example.com" required></div><div><label for="message">Project details</label><textarea id="message" name="Message" placeholder="What are you looking to build or install?" required></textarea></div><button type="submit" class="submit-btn">Send request</button></form></div></div></section>
-</main>
-<footer><div class="wrap"><div class="footer-row"><a href="#top" class="brand"><img src="assets/tcgs-icon.png" alt="TCGS" class="brand-mark"><span class="brand-name" style="color:var(--paper)">Tropical Concept<span style="color:#8FA391">Global Services</span></span></a><div class="footer-links"><a href="#about">About</a><a href="#services">Services</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div></div><div class="footer-bottom"><span>&copy; <span id="year"></span> Tropical Concept Global Services. All rights reserved.</span><span>Agege, Lagos State, Nigeria</span></div></div></footer>
-<script>
-document.getElementById('year').textContent=new Date().getFullYear();
-var menuBtn=document.getElementById('menuBtn'),navRow=document.getElementById('navRow');menuBtn.addEventListener('click',function(){var open=navRow.classList.toggle('nav-open');menuBtn.setAttribute('aria-expanded',open);menuBtn.textContent=open?'✕':'☰'});document.querySelectorAll('nav.main-links a').forEach(function(link){link.addEventListener('click',function(){navRow.classList.remove('nav-open');menuBtn.setAttribute('aria-expanded','false');menuBtn.textContent='☰'})});
-var tiles=Array.from(document.querySelectorAll('.project-tile')),lightbox=document.getElementById('projectLightbox'),image=document.getElementById('lightboxImage'),caption=document.getElementById('lightboxCaption'),current=0;function tileImage(tile){return getComputedStyle(tile).backgroundImage.replace(/^url\(["']?/,'').replace(/["']?\)$/,'')}function showProject(i){current=(i+tiles.length)%tiles.length;var tile=tiles[current];image.src=tileImage(tile);image.alt=tile.textContent.trim();caption.textContent=(current+1)+' / '+tiles.length+' — '+tile.textContent.trim()}function openLightbox(i){showProject(i);lightbox.classList.add('is-open');lightbox.setAttribute('aria-hidden','false');document.body.classList.add('lightbox-open');document.getElementById('lightboxClose').focus()}function closeLightbox(){lightbox.classList.remove('is-open');lightbox.setAttribute('aria-hidden','true');document.body.classList.remove('lightbox-open')}tiles.forEach(function(tile,i){tile.addEventListener('click',function(){openLightbox(i)})});document.getElementById('lightboxPrev').addEventListener('click',function(){showProject(current-1)});document.getElementById('lightboxNext').addEventListener('click',function(){showProject(current+1)});document.getElementById('lightboxClose').addEventListener('click',closeLightbox);lightbox.addEventListener('click',function(e){if(e.target===lightbox)closeLightbox()});document.addEventListener('keydown',function(e){if(!lightbox.classList.contains('is-open'))return;if(e.key==='Escape')closeLightbox();if(e.key==='ArrowLeft')showProject(current-1);if(e.key==='ArrowRight')showProject(current+1)});
-</script>
+  <header>
+    <div class="wrap nav-row" id="navRow">
+      <a href="#top" class="brand"><img src="tcgs%20assests/tcgs-logo.webp" alt="TCGS logo" class="brand-mark"><span class="brand-name">Tropical Concept<span>Global Services</span></span></a>
+      <nav class="main-links" aria-label="Primary navigation"><a href="#about">About</a><a href="#services">Services</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav>
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero"><div class="wrap"><div class="hero-content"><p class="hero-eyebrow">Lagos, Nigeria — fabricating since 2000</p><h1>Aluminium, glass and metal, built to <em>hold</em>.</h1><p class="hero-sub">TCGS manufactures, fabricates and installs structural aluminium, glass and metal systems — from a single window to a full curtain wall — for architects, developers and building owners.</p><div class="hero-actions"><a href="#contact" class="btn-primary">Request a quote</a><a href="#projects" class="btn-ghost">See our work</a></div></div></div></section>
+    <div class="trust"><div class="wrap"><div class="trust-item"><strong>2000</strong><span>In business since</span></div><div class="trust-item"><strong>15+</strong><span>Specialist staff</span></div><div class="trust-item"><strong>7</strong><span>Building sectors served</span></div><div class="trust-item"><strong>Lagos</strong><span>Based &amp; operating</span></div></div></div>
+
+    <section id="about"><div class="wrap about-grid"><div><div class="section-head"><p class="section-tag">About TCGS</p><h2>Structural work, built by people who supervise it end to end.</h2></div><div class="about-copy"><p>Tropical Concept Global Services has been in existence since 2000 and was formally incorporated in Nigeria on 15th May 2015. We manufacture, fabricate and install aluminium, glass and metal systems for residential, commercial and industrial projects.</p><p>With engineers, technicians and computer analysts on staff, we combine practical site experience with quality materials and careful project supervision.</p></div><ul class="goals"><li>Provide adequate and excellent service to every customer</li><li>Meet client needs at affordable prices</li><li>Meet the needs of architects and developers directly</li></ul></div><div class="about-panel"><h3>How a project moves through TCGS</h3><div class="process-step"><span class="num">01</span><div><h4>Evaluate &amp; quote</h4><p>Tender documents, site visits and cost evaluation before production begins.</p></div></div><div class="process-step"><span class="num">02</span><div><h4>Fabricate in-house</h4><p>Components are cut, grooved and finished in our workshop.</p></div></div><div class="process-step"><span class="num">03</span><div><h4>Install &amp; supervise</h4><p>Site supervisors run installation and safety on-site through to sign-off.</p></div></div></div></div></section>
+
+    <section id="services"><div class="wrap"><div class="section-head"><p class="section-tag">What we build</p><h2>Every system, fabricated and installed in-house.</h2><p>A full specification range — from a single casement window to structural glazed curtain walling.</p></div><div class="services-list"><div class="spec-row"><span class="swatch"></span><h3>Aluminium doors &amp; windows</h3><p>Casement, sliding, fixed light and combination units.</p></div><div class="spec-row"><span class="swatch"></span><h3>Frameless glass</h3><p>Shower enclosures, partitions and doors.</p></div><div class="spec-row"><span class="swatch"></span><h3>Dry wall &amp; partitioning</h3><p>Aluminium partitioning systems for offices and interiors.</p></div><div class="spec-row"><span class="swatch"></span><h3>Curtain walling</h3><p>Conventional and structural glazed curtain wall systems.</p></div><div class="spec-row"><span class="swatch"></span><h3>Spider glass walls</h3><p>Point-fixed structural glazing for façades and feature walls.</p></div><div class="spec-row"><span class="swatch"></span><h3>Suspended ceilings</h3><p>Ceiling systems fabricated and fitted to specification.</p></div><div class="spec-row"><span class="swatch"></span><h3>Shopfronts &amp; rooflights</h3><p>Retail-facing glazing and overhead light systems.</p></div><div class="spec-row"><span class="swatch"></span><h3>Aluminium composite panel cladding</h3><p>ACP cladding for façades, column covers, fascia and canopies.</p></div><div class="spec-row"><span class="swatch"></span><h3>Balustrades &amp; handrailing</h3><p>Glass balustrades and stainless steel handrailing.</p></div><div class="spec-row"><span class="swatch"></span><h3>Project supervision</h3><p>Full site supervision through installation sign-off.</p></div></div></div></section>
+
+    <section id="projects"><div class="wrap"><div class="section-head"><p class="section-tag">Recent work</p><h2>A sample of completed and ongoing installations.</h2></div><div class="project-grid">
+      <div class="project-tile tile-1"><span>ALUMINUM COMPOSITE PANEL CLADDING WORK</span></div><div class="project-tile tile-2"><span>ALUMINUM COMPOSITE PANEL (ACP) CLADDING WORKS</span></div><div class="project-tile tile-3"><span>ALUMINUM COMPOSITE PANEL CLADDING WORKS</span></div><div class="project-tile tile-4"><span>FRAMELESS TOUGHENED SHOWER BATH GLASS</span></div><div class="project-tile tile-5"><span>BALUSTRADES STAINLESS STEEL RAILINGS</span></div><div class="project-tile tile-6"><span>FRAMELESS TOUGHENED RAILINGS GLASS</span></div><div class="project-tile tile-7"><span>BALUSTRADES STAINLESS STEEL BURGLARY</span></div><div class="project-tile tile-8"><span>AUTOMATIC DOOR INSTALLATION WORK</span></div><div class="project-tile tile-9"><span>FRAMELESS TOUGHENED OFFICE PARTITION GLASS WORK</span></div><div class="project-tile tile-10"><span>ALUMINUM CASEMENT AND FRAMELESS WINDOWS</span></div><div class="project-tile tile-11"><span>STRUCTURAL FRAMELESS ALUMINUM CURTAIN WALL WORKS</span></div><div class="project-tile tile-12"><span>ALUMINUM TOILET DUCT WORK</span></div><div class="project-tile tile-13"><span>FRAMELESS CASEMENT WINDOW, ADD WITH OTHER WINDOW</span></div><div class="project-tile tile-14"><span>INSTALLATION OF CLICK CLADDING WORKS</span></div><div class="project-tile tile-15"><span>ALUMINUM DOORS</span></div><div class="project-tile tile-16"><span>ALUMINUM FIXED GLASS WORK</span></div><div class="project-tile tile-17"><span>CLICK CLADDING WORKS</span></div><div class="project-tile tile-18"><span>FINISH ALUMINUM AND GLASS WORK</span></div>
+    </div><p class="project-note">Click any project to view it clearly. Use the arrows to move through all 18 project samples.</p></div></section>
+
+    <div class="lightbox" id="projectLightbox" role="dialog" aria-modal="true" aria-label="Project image viewer" aria-hidden="true"><button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close">&times;</button><button class="lightbox-arrow lightbox-prev" id="lightboxPrev" type="button" aria-label="Previous">&#10094;</button><div class="lightbox-content"><img class="lightbox-image" id="lightboxImage" alt=""><p class="lightbox-caption" id="lightboxCaption"></p></div><button class="lightbox-arrow lightbox-next" id="lightboxNext" type="button" aria-label="Next">&#10095;</button></div>
+
+    <section id="contact" class="contact-section"><div class="wrap"><div class="section-head"><p class="section-tag">Get in touch</p><h2>Tell us about your project.</h2><p>Send a few details and we'll come back with a quote and timeline.</p></div><div class="contact-grid"><div class="contact-info"><div class="item"><dt>Address</dt><dd>5, Ifelodun Street, off Lagos Abeokuta Exp. Way, Dopemu Bus Stop, Agege, Lagos State.</dd></div><div class="item"><dt>Phone</dt><dd>+234 806 639 1730 · 0802 365 2834</dd></div><div class="item"><dt>Email</dt><dd>tropicalconceptglobalservice@gmail.com</dd></div></div><form action="https://api.web3forms.com/submit" method="POST"><input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY"><input type="hidden" name="subject" value="New quote request — TCGS website"><input type="hidden" name="redirect" value="thank-you.html"><div class="form-row"><div><label for="name">Name</label><input id="name" name="Name" placeholder="Your name" required></div><div><label for="phone">Phone</label><input id="phone" name="Phone" placeholder="Your phone number"></div></div><div><label for="email">Email</label><input type="email" id="email" name="Email" placeholder="you@example.com" required></div><div><label for="message">Project details</label><textarea id="message" name="Message" placeholder="What are you looking to build or install?" required></textarea></div><button class="submit-btn" type="submit">Send request</button></form></div></div></section>
+  </main>
+
+  <footer><div class="wrap"><div class="footer-row"><a href="#top" class="brand"><img src="assets/tcgs-icon.png" alt="TCGS" class="brand-mark"><span class="brand-name" style="color:var(--paper)">Tropical Concept<span style="color:#8fa391">Global Services</span></span></a><div class="footer-links"><a href="#about">About</a><a href="#services">Services</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div></div><div class="footer-bottom"><span>&copy; <span id="year"></span> Tropical Concept Global Services. All rights reserved.</span><span>Agege, Lagos State, Nigeria</span></div></div></footer>
+
+  <script>
+    /* ================================================================
+       TCGS WEBSITE SCRIPTS: menu, project lightbox and keyboard controls
+       ================================================================ */
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const menuButton = document.getElementById('menuBtn');
+    const navRow = document.getElementById('navRow');
+    menuButton.addEventListener('click', () => {
+      const open = navRow.classList.toggle('nav-open');
+      menuButton.setAttribute('aria-expanded', open);
+      menuButton.textContent = open ? '✕' : '☰';
+    });
+    document.querySelectorAll('.main-links a').forEach(link => link.addEventListener('click', () => {
+      navRow.classList.remove('nav-open');
+      menuButton.setAttribute('aria-expanded', 'false');
+      menuButton.textContent = '☰';
+    }));
+
+    const tiles = [...document.querySelectorAll('.project-tile')];
+    const lightbox = document.getElementById('projectLightbox');
+    const lightboxImage = document.getElementById('lightboxImage');
+    const lightboxCaption = document.getElementById('lightboxCaption');
+    let currentProject = 0;
+
+    function imagePath(tile) {
+      return getComputedStyle(tile).backgroundImage.replace(/^url\(["']?/, '').replace(/["']?\)$/, '');
+    }
+    function showProject(index) {
+      currentProject = (index + tiles.length) % tiles.length;
+      const tile = tiles[currentProject];
+      lightboxImage.src = imagePath(tile);
+      lightboxImage.alt = tile.textContent.trim();
+      lightboxCaption.textContent = `${currentProject + 1} / ${tiles.length} — ${tile.textContent.trim()}`;
+    }
+    function openLightbox(index) {
+      showProject(index);
+      lightbox.classList.add('is-open');
+      lightbox.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('lightbox-open');
+      document.getElementById('lightboxClose').focus();
+    }
+    function closeLightbox() {
+      lightbox.classList.remove('is-open');
+      lightbox.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('lightbox-open');
+    }
+    tiles.forEach((tile, index) => tile.addEventListener('click', () => openLightbox(index)));
+    document.getElementById('lightboxPrev').addEventListener('click', () => showProject(currentProject - 1));
+    document.getElementById('lightboxNext').addEventListener('click', () => showProject(currentProject + 1));
+    document.getElementById('lightboxClose').addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', event => { if (event.target === lightbox) closeLightbox(); });
+    document.addEventListener('keydown', event => {
+      if (!lightbox.classList.contains('is-open')) return;
+      if (event.key === 'Escape') closeLightbox();
+      if (event.key === 'ArrowLeft') showProject(currentProject - 1);
+      if (event.key === 'ArrowRight') showProject(currentProject + 1);
+    });
+  </script>
 </body>
 </html>
